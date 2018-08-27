@@ -1,0 +1,12 @@
+.portfolio {
+	margin-top: 30px;
+}
+
+.portfolio table {
+	width: 100%;
+}
+
+.portfolio table tr th,
+.portfolio table tr td {
+	padding: 5px;
+}
