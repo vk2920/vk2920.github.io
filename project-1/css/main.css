@@ -1,12 +1,26 @@
 * {box-sizing: border-box;}
 
+h3 {
+	height: 26px;
+}
+
 .header, .main, .section {
-	margin: 20px 0;
+	margin: 50px 0;
 }
 
 .form {
 	border: 5px solid #7262C9;
 	height: 315px;
+}
+
+.form label {
+	display: inline-block;
+	padding: 5px;
+	padding-top: 0;
+	background-color: #fff;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
 }
 
 .form input {
@@ -25,12 +39,13 @@
 
 .form input#submit {
 	background-color: #7262C9;
+	font-size: 20px;
 }
 
 .feature-box {
 	height: 160px;
 }
 
-.feature {
-	margin: 35px auto;
+.feature .row {
+	margin: 35px 0;
 }
