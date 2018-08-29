@@ -1,12 +1,41 @@
+* {
+	text-decoration: none;
+	color: #333;
+}
+
 .portfolio {
 	margin-top: 30px;
 }
 
-.portfolio table {
+.portfoio-card {
+	-webkit-transition: all 200ms;
+	-o-transition: all 200ms;
+	transition: all 200ms;
+	-webkit-box-shadow:
+		-5px -5px 10px #888,
+		-5px 5px 10px #888,
+		5px -5px 10px #888,
+		5px 5px 10px #888;
+	box-shadow:
+		-5px -5px 10px #888,
+		-5px 5px 10px #888,
+		5px -5px 10px #888,
+		5px 5px 10px #888;
+}
+
+.portfolio-card img {
 	width: 100%;
 }
 
-.portfolio table tr th,
-.portfolio table tr td {
-	padding: 5px;
+.portfoio-card:hover {
+	-webkit-box-shadow:
+		-5px -5px 10px #ccc,
+		-5px 5px 10px #ccc,
+		5px -5px 10px #ccc,
+		5px 5px 10px #ccc;
+	box-shadow:
+		-5px -5px 10px #ccc,
+		-5px 5px 10px #ccc,
+		5px -5px 10px #ccc,
+		5px 5px 10px #ccc;
 }
