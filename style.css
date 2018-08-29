@@ -8,6 +8,7 @@
 }
 
 .portfoio-card {
+	padding: 10px;
 	-webkit-transition: all 200ms;
 	-o-transition: all 200ms;
 	transition: all 200ms;
