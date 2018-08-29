@@ -68,7 +68,10 @@
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="http://getbootstrap.com/assets/js/ie10-viewport-bug-workaround.js"></script>
     <script>
-        $(".screenshot").css("width",$(".portfoio-card").css("width"));
+        w = $(".portfoio-card").css("width");
+        w = parseInt(w);
+        w -= 10;
+        $(".screenshot").css("width",w+"px");
     </script>
   </body>
 </html>
