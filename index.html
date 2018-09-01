@@ -30,6 +30,12 @@
 
   <body>
 
+    <div class="preloader">
+      <div class="circle">
+        
+      </div>
+    </div>
+
 		<div class="container">
 			<div class="header">
 				<div class="row">
@@ -40,25 +46,23 @@
 			</div> <!-- /.header -->
 
 			<div class="portfolio">
-                <div class="container">
-                    <div class="row">
-
-                        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-                            <div class="portfoio-card text-center" href="project-1/index.html">
-                                <img src="img/scr/1.png" alt="Как заработать 1&nbsp;000&nbsp;000 на верстке" class="screenshot">
-                                <h4><a href="project-1/index.html">Как заработать 1&nbsp;000&nbsp;000 на верстке</a></h4>
-                                <span class="links">
-                                    <a href="project-1/index.html">Посмотреть</a>
-                                    <span> | </span>
-                                    <a href="project-1/index.html" target="_blank">В новой вкладке</a>
-                                    <br>
-                                    <a href="project-1.rar" download="">Скачать исходники</a>
-                                </span>
-                            </div>
-                        </div>
-                        
-                    </div>
-                </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+              <div class="portfoio-card text-center" href="project-1/index.html">
+                <img src="img/scr/1.png" alt="Как заработать 1&nbsp;000&nbsp;000 на верстке" class="screenshot">
+                <h4><a href="project-1/index.html">Как заработать 1&nbsp;000&nbsp;000 на верстке</a></h4>
+                <span class="links">
+                  <a href="project-1/index.html">Посмотреть</a>
+                  <span> | </span>
+                  <a href="project-1/index.html" target="_blank">В новой вкладке</a>
+                  <br>
+                  <a href="project-1.rar" download="">Скачать исходники</a>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
 			</div>
 		</div>
 
@@ -74,6 +78,9 @@
         w = parseInt(w);
         w -= 10;
         $(".screenshot").css("width",w+"px");
+        setTimeout(function(){
+          $(".preloader").toggleClass("loaded");
+        },500);
     </script>
   </body>
 </html>
