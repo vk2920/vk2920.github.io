@@ -65,7 +65,7 @@
 	margin-top: calc(50vh - 30px);
 	border-radius: 50%;
 	border: 5px solid white;
-	border-top: 5px solid blue;
+	border-top-color: blue;
 	-webkit-animation: rotating 1500ms infinite linear;
 	-o-animation: rotating 1500ms infinite linear;
 	animation: rotating 1500ms infinite linear;

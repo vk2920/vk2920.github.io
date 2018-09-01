@@ -29,14 +29,16 @@
   </head>
 
   <body>
-
+    
+    <!-- Прелоадер -->
     <div class="preloader">
-      <div class="circle">
-        
-      </div>
+      <div class="circle"></div>
     </div>
 
+    <!-- Содержимое -->
 		<div class="container">
+
+      <!-- Шапка -->
 			<div class="header">
 				<div class="row">
 					<div class="col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 col-xs-12 col-xs-offset-0">
@@ -44,7 +46,8 @@
 					</div>
 				</div>
 			</div> <!-- /.header -->
-
+      
+      <!-- Сетка с карточками портфолио -->
 			<div class="portfolio">
         <div class="container">
           <div class="row">
@@ -78,9 +81,11 @@
         w = parseInt(w);
         w -= 10;
         $(".screenshot").css("width",w+"px");
-        setTimeout(function(){
-          $(".preloader").toggleClass("loaded");
-        },500);
+        document.body.onload = function() {
+          setTimeout(function(){
+            $(".preloader").toggleClass("loaded");
+          },500);
+        }
     </script>
   </body>
 </html>
