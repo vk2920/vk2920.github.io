@@ -1,6 +1,7 @@
-#section-main #section-main__description {
+@charset "UTF-8";
+№main #main__description {
   vertical-align: middle; }
-#section-main #section-main__image {
+№main #main__image {
   border-radius: 10px;
   border-style: solid;
   border-width: 2px;
