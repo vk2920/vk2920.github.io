@@ -5,6 +5,12 @@ body {
     min-height: calc(100vh - 56px); }
   body > nav {
     background-color: rgba(52, 58, 64, 0.85) !important; }
+  body > .section > .container > h2 {
+    padding-top: 25px;
+    text-align: center;
+    font-size: 36px; }
+    body > .section > .container > h2 span.dot {
+      color: #00ff00; }
 
 #main {
   margin-top: 56px;
@@ -19,5 +25,14 @@ body {
     width: 100%; }
     #main .container #main__image img {
       height: 100%; }
+
+#features .feature {
+  text-align: center;
+  margin-top: 15px; }
+  #features .feature img {
+    width: 80px;
+    height: 80px; }
+  #features .feature p {
+    margin-top: 15px; }
 
 /*# sourceMappingURL=main.css.map */

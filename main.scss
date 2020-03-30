@@ -7,6 +7,14 @@ body {
   & > nav {
     background-color: rgba(52, 58, 64, .85) !important;
   }
+  & > .section > .container > h2 {
+    padding-top: 25px;
+    text-align: center;
+    font-size: 36px;
+    span.dot {
+      color: #00ff00;
+    }
+  }
 }
 
 #main {
@@ -28,6 +36,20 @@ body {
       img {
         height: 100%;
       }
+    }
+  }
+}
+
+#features {
+  .feature {
+    text-align: center;
+    margin-top: 15px;
+    img {
+      width: 80px;
+      height: 80px;
+    }
+    p {
+      margin-top: 15px;
     }
   }
 }
