@@ -1,12 +1,33 @@
-#main {
-  #main__description {
-    vertical-align: middle;
+body {
+  color: #fff;
+  background-color: #000;
+  & > div {
+    min-height: calc(100vh - 56px);
   }
-  
-  #main__image {
-    border-radius: 10px;
-    border-style: solid;
-    border-width: 2px;
-    width: 100%;
+  & > nav {
+    background-color: rgba(52, 58, 64, .85) !important;
+  }
+}
+
+#main {
+  margin-top: 56px;
+  padding-top: 20px;
+
+  .container {
+    #main__description {
+      height: 100%;
+      display: inline-block;
+    }
+
+    #main__image {
+      border-radius: 10px;
+      border-style: solid;
+      border-width: 2px;
+      width: 100%;
+
+      img {
+        height: 100%;
+      }
+    }
   }
 }

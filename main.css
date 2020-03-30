@@ -1,9 +1,23 @@
-#main #main__description {
-  vertical-align: middle; }
-#main #main__image {
-  border-radius: 10px;
-  border-style: solid;
-  border-width: 2px;
-  width: 100%; }
+body {
+  color: #fff;
+  background-color: #000; }
+  body > div {
+    min-height: calc(100vh - 56px); }
+  body > nav {
+    background-color: rgba(52, 58, 64, 0.85) !important; }
+
+#main {
+  margin-top: 56px;
+  padding-top: 20px; }
+  #main .container #main__description {
+    height: 100%;
+    display: inline-block; }
+  #main .container #main__image {
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 2px;
+    width: 100%; }
+    #main .container #main__image img {
+      height: 100%; }
 
 /*# sourceMappingURL=main.css.map */
