@@ -66,11 +66,12 @@ body {
     margin-top: 15px; }
 
 #portfolio .portfolio-card {
-  border-width: 2px;
+  border-width: 1px;
   border-style: solid;
   border-color: #fff;
   border-radius: 10px;
-  text-align: center; }
+  text-align: center;
+  max-width: calc(100vw - 10px); }
   #portfolio .portfolio-card > a {
     display: inline-block;
     width: 70%;
@@ -79,10 +80,21 @@ body {
     border-width: 1px;
     border-style: solid;
     border-color: #fff;
-    border-top: none; }
+    border-top: none;
+    border-right: none;
+    border-left: none; }
+    @media screen and (max-width: 767px) {
+      #portfolio .portfolio-card > a {
+        border-top-right-radius: 5px;
+        border-top-left-radius: 5px;
+        width: 100%; } }
     #portfolio .portfolio-card > a img {
       width: 100%;
       border-bottom-left-radius: 15px;
       border-bottom-right-radius: 15px; }
+      @media screen and (max-width: 767px) {
+        #portfolio .portfolio-card > a img {
+          border-top-right-radius: 8px;
+          border-top-left-radius: 8px; } }
 
 /*# sourceMappingURL=main.css.map */

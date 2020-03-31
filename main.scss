@@ -90,11 +90,12 @@ body {
 #portfolio {
   .portfolio-card {
     // IMPORTANT !!! Border is not visible
-    border-width: 2px;
+    border-width: 1px;
     border-style: solid;
     border-color: #fff;
     border-radius: 10px;
     text-align: center;
+    max-width: calc(100vw - 10px);
     & > a {
       display: inline-block;
       width: 70%;
@@ -104,10 +105,21 @@ body {
       border-style: solid;
       border-color: #fff;
       border-top: none;
+      border-right: none;
+      border-left: none;
+      @media screen and (max-width: 767px) {
+        border-top-right-radius: 5px;
+        border-top-left-radius: 5px;
+        width: 100%;
+      }
       img {
         width: 100%;
         border-bottom-left-radius: 15px;
         border-bottom-right-radius: 15px;
+        @media screen and (max-width: 767px) {
+          border-top-right-radius: 8px;
+          border-top-left-radius: 8px;
+        }
       }
     }
     //
