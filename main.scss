@@ -1,3 +1,8 @@
+@keyframes preloaderAnim {
+  from {transform: rotate(0);}
+  to {transform: rotate(360deg);}
+}
+
 body {
   color: #fff;
   background-color: #000;
@@ -15,6 +20,34 @@ body {
       color: #00ff00;
     }
   }
+}
+
+#preloader {
+	position: fixed;
+	overflow: hidden;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 100vw;
+	height: 100vh;
+	background-color: #000;
+	z-index: 10000;
+	#preloader-circle {
+		width: 100px;
+		height: 100px;
+		position: relative;
+		top: 50%;
+		left: 50%;
+		right: 50%;
+		bottom: 50%;
+		margin-top: -50px;
+		margin-left: -50px;
+		animation: preloaderAnim 1.5s infinite linear;
+	}
+	&.loaded {
+		display: none;
+	}
 }
 
 #main {
@@ -55,5 +88,23 @@ body {
 }
 
 #portfolio {
-
+  .portfolio-card {
+    // IMPORTANT !!! Border is not visible
+    border-width: 2px;
+    border-style: solid;
+    border-color: #fff;
+    border-radius: 10px;
+    text-align: center;
+    & > a {
+      display: inline-block;
+      width: 100%;
+      border-width: 1px;
+      border-style: solid;
+      border-color: #fff;
+      img {
+        width: 100%;
+      }
+    }
+    //
+  }
 }

@@ -9,8 +9,18 @@
     <title>VkW2920</title>
   </head>
   <body>
+    <!-- PRELOADER -->
+    <div id="preloader">
+      <div id="preloader-circle">
+        <svg class="preloader__image" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+          <path fill="currentColor" d="M304 48c0 26.51-21.49 48-48 48s-48-21.49-48-48 21.49-48 48-48 48 21.49 48 48zm-48 368c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zm208-208c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zM96 256c0-26.51-21.49-48-48-48S0 229.49 0 256s21.49 48 48 48 48-21.49 48-48zm12.922 99.078c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.491-48-48-48zm294.156 0c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.49-48-48-48zM108.922 60.922c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.491-48-48-48z">
+          </path>
+        </svg>
+      </div>
+    </div>
+
     <!-- NAVIGATION -->
-    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+    <nav id="navbar" class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
       <div class="container">
         <a class="navbar-brand internal" href="#main">VkW2920</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -105,10 +115,10 @@
       <div class="container">
         <h2>МОИ РАБОТЫ<span class="dot">.</span></h2>
         <div class="row">
-          <div id="multiCarousel" class="carousel slide w-100" data-ride="carousel">
+          <div id="porfolio-carousel" class="carousel slide w-100" data-ride="carousel">
             <div class="carousel-inner w-100" role="listbox">
               <div class="carousel-item active">
-                <div class="portfolio-card">
+                <div class="portfolio-card d-block mx-auto">
                   <a href="portfolio/first-work/index.html">
                     <img src="img/portfolio/first-work.jpg" alt="Предварительный просмотр недоступен" class="preview">
                   </a>
@@ -118,11 +128,11 @@
                 </div>
               </div>
             </div>
-            <a class="carousel-control-prev" href="#multiCarousel" role="button" data-slide="prev">
+            <a class="carousel-control-prev" href="#porfolio-carousel" role="button" data-slide="prev">
               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
               <span class="sr-only">Предыдущий</span>
             </a>
-            <a class="carousel-control-next" href="#multiCarousel" role="button" data-slide="next">
+            <a class="carousel-control-next" href="#porfolio-carousel" role="button" data-slide="next">
               <span class="carousel-control-next-icon" aria-hidden="true"></span>
               <span class="sr-only">Cледующий</span>
             </a>

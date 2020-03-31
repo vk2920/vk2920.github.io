@@ -354,14 +354,6 @@
 		$(window).on('load', function() {
 			$('#preloader').fadeOut().end().delay(300).fadeOut('slow');
 		});
-		$(document).ready(function(){
-			$('a.internal').bind("click", function(e){
-				var anchor = $(this);
-				$('html, body').stop().animate({scrollTop: $(anchor.attr('href')).offset().top - 56}, 600);
-				e.preventDefault();
-			})
-			return false;
-		});
 	</script>
 	<!-- END OF SCRIPTS -->
 </body>
