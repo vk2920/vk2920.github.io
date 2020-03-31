@@ -46,6 +46,9 @@ body {
   #preloader.loaded {
     display: none; }
 
+#navbar .navbar-brand {
+  font-family: "Lobster", cursive; }
+
 #main {
   margin-top: 56px;
   padding-top: 20px; }
