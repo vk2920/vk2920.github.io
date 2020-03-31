@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Lobster&display=swap");
 @keyframes preloaderAnim {
   from {
     transform: rotate(0); }
@@ -6,12 +7,15 @@
 body {
   color: #fff;
   background-color: #000; }
+  body a {
+    color: #0f0; }
   body > div {
     min-height: calc(100vh - 56px); }
   body > nav {
     background-color: rgba(52, 58, 64, 0.85) !important; }
   body > .section > .container > h2 {
     padding-top: 25px;
+    font-family: "Lobster", cursive;
     text-align: center;
     font-size: 36px; }
     body > .section > .container > h2 span.dot {
@@ -103,6 +107,9 @@ body {
           #portfolio .portfolio-card > a img {
             border-top-right-radius: 8px;
             border-top-left-radius: 8px; } }
+    #portfolio .portfolio-card > span.screenshot-clickable {
+      color: rgba(255, 255, 255, 0.5);
+      font-size: 12px; }
 
 #portfolio-work-description-full {
   margin-top: 65px; }
@@ -111,7 +118,8 @@ body {
 
 #contact {
   margin-top: 50px;
-  text-align: center; }
+  text-align: center;
+  min-height: calc(100vh - 100px); }
   #contact ul {
     padding: 0;
     list-style-type: none; }
