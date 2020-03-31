@@ -96,6 +96,7 @@ body {
 }
 
 #portfolio {
+  margin-top: 50px;
   .portfolio-card {
     // IMPORTANT !!! Border is not visible
     border-width: 1px;
@@ -138,5 +139,24 @@ body {
   margin-top: 65px;
   h1 {
     text-align: center;
+  }
+}
+
+#contact {
+  margin-top: 50px;
+  text-align: center;
+  ul {
+    padding: 0;
+    list-style-type: none;
+    span.fa {
+      display: inline-block;
+      text-align: center;
+      width: 22px;
+    }
+  }
+  .contact-link a {
+    color: #fff;
+    font-size: 22px;
+    padding-top: 10px;
   }
 }

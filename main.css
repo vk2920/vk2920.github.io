@@ -70,41 +70,58 @@ body {
   #features .feature p {
     margin-top: 15px; }
 
-#portfolio .portfolio-card {
-  border-width: 1px;
-  border-style: solid;
-  border-color: #fff;
-  border-radius: 10px;
-  text-align: center;
-  max-width: calc(100vw - 10px); }
-  #portfolio .portfolio-card > a {
-    display: inline-block;
-    width: 70%;
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
+#portfolio {
+  margin-top: 50px; }
+  #portfolio .portfolio-card {
     border-width: 1px;
     border-style: solid;
     border-color: #fff;
-    border-top: none;
-    border-right: none;
-    border-left: none; }
-    @media screen and (max-width: 767px) {
-      #portfolio .portfolio-card > a {
-        border-top-right-radius: 5px;
-        border-top-left-radius: 5px;
-        width: 100%; } }
-    #portfolio .portfolio-card > a img {
-      width: 100%;
+    border-radius: 10px;
+    text-align: center;
+    max-width: calc(100vw - 10px); }
+    #portfolio .portfolio-card > a {
+      display: inline-block;
+      width: 70%;
       border-bottom-left-radius: 15px;
-      border-bottom-right-radius: 15px; }
+      border-bottom-right-radius: 15px;
+      border-width: 1px;
+      border-style: solid;
+      border-color: #fff;
+      border-top: none;
+      border-right: none;
+      border-left: none; }
       @media screen and (max-width: 767px) {
-        #portfolio .portfolio-card > a img {
-          border-top-right-radius: 8px;
-          border-top-left-radius: 8px; } }
+        #portfolio .portfolio-card > a {
+          border-top-right-radius: 5px;
+          border-top-left-radius: 5px;
+          width: 100%; } }
+      #portfolio .portfolio-card > a img {
+        width: 100%;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px; }
+        @media screen and (max-width: 767px) {
+          #portfolio .portfolio-card > a img {
+            border-top-right-radius: 8px;
+            border-top-left-radius: 8px; } }
 
 #portfolio-work-description-full {
   margin-top: 65px; }
   #portfolio-work-description-full h1 {
     text-align: center; }
+
+#contact {
+  margin-top: 50px;
+  text-align: center; }
+  #contact ul {
+    padding: 0;
+    list-style-type: none; }
+    #contact ul span.fa {
+      display: inline-block;
+      text-align: center;
+      width: 22px; }
+  #contact .contact-link a {
+    color: #fff;
+    font-size: 22px;
+    padding-top: 10px; }
 
 /*# sourceMappingURL=main.css.map */
