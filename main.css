@@ -97,4 +97,9 @@ body {
           border-top-right-radius: 8px;
           border-top-left-radius: 8px; } }
 
+#portfolio-work-description-full {
+  margin-top: 65px; }
+  #portfolio-work-description-full h1 {
+    text-align: center; }
+
 /*# sourceMappingURL=main.css.map */
