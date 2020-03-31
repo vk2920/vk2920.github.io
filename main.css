@@ -73,11 +73,16 @@ body {
   text-align: center; }
   #portfolio .portfolio-card > a {
     display: inline-block;
-    width: 100%;
+    width: 70%;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
     border-width: 1px;
     border-style: solid;
-    border-color: #fff; }
+    border-color: #fff;
+    border-top: none; }
     #portfolio .portfolio-card > a img {
-      width: 100%; }
+      width: 100%;
+      border-bottom-left-radius: 15px;
+      border-bottom-right-radius: 15px; }
 
 /*# sourceMappingURL=main.css.map */
