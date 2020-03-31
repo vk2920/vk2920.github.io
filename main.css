@@ -45,9 +45,14 @@ body {
 #main {
   margin-top: 56px;
   padding-top: 20px; }
+  #main .container .row {
+    height: calc(100vh - 130px); }
   #main .container #main__description {
-    height: 100%;
     display: inline-block; }
+    #main .container #main__description h2 {
+      font-size: 32px; }
+    #main .container #main__description p {
+      font-size: 22px; }
   #main .container #main__image {
     border-radius: 10px;
     border-style: solid;

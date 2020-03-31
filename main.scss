@@ -55,9 +55,17 @@ body {
   padding-top: 20px;
 
   .container {
+    .row {
+      height: calc(100vh - 130px);
+    }
     #main__description {
-      height: 100%;
       display: inline-block;
+      h2 {
+        font-size: 32px;
+      }
+      p {
+        font-size: 22px;
+      }
     }
 
     #main__image {
