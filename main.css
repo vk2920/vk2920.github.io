@@ -13,12 +13,14 @@ body {
     min-height: calc(100vh - 56px); }
   body > nav {
     background-color: rgba(52, 58, 64, 0.85) !important; }
-  body > .section > .container > h2 {
+  body > .section:nth-child(2n+1) {
+    background-color: #080808; }
+  body > .section .container h2.section-title {
     padding-top: 25px;
     font-family: "Lobster", cursive;
     text-align: center;
     font-size: 36px; }
-    body > .section > .container > h2 span.dot {
+    body > .section .container h2.section-title span.dot {
       color: #00ff00; }
 
 #preloader {
@@ -60,6 +62,9 @@ body {
       font-size: 32px; }
     #main .container #main__description p {
       font-size: 22px; }
+      @media screen and (max-width: 375px) {
+        #main .container #main__description p {
+          font-size: 18px; } }
   #main .container #main__image {
     border-radius: 10px;
     border-style: solid;
@@ -78,7 +83,8 @@ body {
     margin-top: 15px; }
 
 #portfolio {
-  margin-top: 50px; }
+  margin-top: 50px;
+  padding-bottom: 30px; }
   #portfolio .portfolio-card {
     border-width: 1px;
     border-style: solid;
@@ -114,6 +120,17 @@ body {
       color: rgba(255, 255, 255, 0.5);
       font-size: 12px; }
 
+#pricing .price-element {
+  text-align: center;
+  padding-top: 20px; }
+  #pricing .price-element .price-element-image {
+    width: 75px;
+    height: 75px; }
+  #pricing .price-element .price-element-description {
+    padding-top: 15px; }
+#pricing .additional-description {
+  color: rgba(255, 255, 255, 0.5); }
+
 #portfolio-work-description-full {
   margin-top: 65px; }
   #portfolio-work-description-full h1 {
@@ -121,8 +138,9 @@ body {
 
 #contact {
   margin-top: 50px;
+  padding-top: 44px;
   text-align: center;
-  min-height: calc(100vh - 100px); }
+  min-height: calc(100vh - 56px); }
   #contact ul {
     padding: 0;
     list-style-type: none; }

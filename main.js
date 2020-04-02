@@ -11,9 +11,13 @@ console.log("Heights of sections contents saved");
 
 if (win_w >= 768) {
   porfolio_carousel_w = $("#porfolio-carousel").width();
-  portfolio_card_w = porfolio_carousel_w - 288;
+  portfolio_card_w = porfolio_carousel_w - 278;
   $(".portfolio-card").css("width", portfolio_card_w);
   console.log("Size of portfolio-card is setted to " + portfolio_card_w);
+}
+if (win_w < 768) {
+  $(".price-element-image").addClass("d-none");
+  $(".price-element-description").css("padding-top", 0);
 }
 
 // // Paddings for sections
@@ -31,6 +35,13 @@ $(document).resize(function() {
   // Update window properties
   win_w = $(window).width();
   win_h = $(window).height();
+
+  if (win_w >= 768) {
+    porfolio_carousel_w = $("#porfolio-carousel").width();
+    portfolio_card_w = porfolio_carousel_w - 278;
+    $(".portfolio-card").css("width", portfolio_card_w);
+    console.log("Size of portfolio-card is setted to " + portfolio_card_w);
+  }
 
   // Paddings for sections
   // MAIN

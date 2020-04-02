@@ -17,13 +17,18 @@ body {
   & > nav {
     background-color: rgba(52, 58, 64, .85) !important;
   }
-  & > .section > .container > h2 {
-    padding-top: 25px;
-    font-family: "Lobster", cursive;
-    text-align: center;
-    font-size: 36px;
-    span.dot {
-      color: #00ff00;
+  & > .section {
+    &:nth-child(2n+1) {
+      background-color: #080808;
+    }
+    .container h2.section-title {
+      padding-top: 25px;
+      font-family: "Lobster", cursive;
+      text-align: center;
+      font-size: 36px;
+      span.dot {
+        color: #00ff00;
+      }
     }
   }
 }
@@ -77,6 +82,9 @@ body {
       }
       p {
         font-size: 22px;
+        @media screen and (max-width: 375px) {
+          font-size: 18px;
+        }
       }
     }
 
@@ -109,6 +117,7 @@ body {
 
 #portfolio {
   margin-top: 50px;
+  padding-bottom: 30px;
   .portfolio-card {
     // IMPORTANT !!! Border is not visible
     border-width: 1px;
@@ -150,6 +159,23 @@ body {
   }
 }
 
+#pricing {
+  .price-element {
+    text-align: center;
+    padding-top: 20px;
+    .price-element-image {
+      width: 75px;
+      height: 75px;
+    }
+    .price-element-description {
+      padding-top: 15px;
+    }
+  }
+  .additional-description {
+    color: rgba(255, 255, 255, .5);
+  }
+}
+
 #portfolio-work-description-full {
   margin-top: 65px;
   h1 {
@@ -159,8 +185,9 @@ body {
 
 #contact {
   margin-top: 50px;
+  padding-top: 44px;
   text-align: center;
-  min-height: calc(100vh - 100px);
+  min-height: calc(100vh - 56px);
   ul {
     padding: 0;
     list-style-type: none;
