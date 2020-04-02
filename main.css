@@ -121,15 +121,18 @@ body {
       font-size: 12px; }
 
 #pricing .price-element {
-  text-align: center;
-  padding-top: 20px; }
+  text-align: center; }
+  @media screen and (min-width: 768) {
+    #pricing .price-element {
+      padding-top: 20px; } }
   #pricing .price-element .price-element-image {
     width: 75px;
     height: 75px; }
   #pricing .price-element .price-element-description {
     padding-top: 15px; }
 #pricing .additional-description {
-  color: rgba(255, 255, 255, 0.5); }
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 12px; }
 
 #portfolio-work-description-full {
   margin-top: 65px; }

@@ -162,7 +162,9 @@ body {
 #pricing {
   .price-element {
     text-align: center;
-    padding-top: 20px;
+    @media screen and (min-width: 768) {
+      padding-top: 20px;
+    }
     .price-element-image {
       width: 75px;
       height: 75px;
@@ -173,6 +175,7 @@ body {
   }
   .additional-description {
     color: rgba(255, 255, 255, .5);
+    font-size: 12px;
   }
 }
 
