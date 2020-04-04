@@ -1,0 +1,61 @@
+.navbar.bg-primary {
+  background-color: #0052aa !important; }
+
+.section-title {
+  text-align: center;
+  padding-top: 35px; }
+
+#section-carousel {
+  margin-top: 56px;
+  height: calc(100vh - 56px);
+  width: 100vw; }
+  #section-carousel .carousel-inner {
+    height: 100%; }
+    #section-carousel .carousel-inner .carousel-item, #section-carousel .carousel-inner .section, #section-carousel .carousel-inner .container, #section-carousel .carousel-inner .row {
+      height: 100%; }
+  #section-carousel #main #main-small-block {
+    text-align: center; }
+    #section-carousel #main #main-small-block #main-link {
+      font-size: 20px;
+      border-radius: 10px;
+      background-color: #0052aa;
+      color: #fff; }
+      #section-carousel #main #main-small-block #main-link:hover {
+        background-color: #007bff; }
+  #section-carousel #about .about-element {
+    text-align: center; }
+    #section-carousel #about .about-element-image {
+      width: 100px;
+      height: 100px; }
+    #section-carousel #about .about-element-title {
+      margin-top: 15px; }
+  #section-carousel #certificaes-by-disease .cert-list, #section-carousel #certificaes-for-work .cert-list {
+    list-style-type: none;
+    padding: 0; }
+    #section-carousel #certificaes-by-disease .cert-list .cert-item button, #section-carousel #certificaes-for-work .cert-list .cert-item button {
+      text-align: center;
+      width: 100%;
+      margin: 10px 0 10px 0;
+      border-radius: 10px;
+      background-color: #0052aa; }
+      #section-carousel #certificaes-by-disease .cert-list .cert-item button:hover, #section-carousel #certificaes-for-work .cert-list .cert-item button:hover {
+        background-color: #007bff; }
+  #section-carousel #towns {
+    text-align: center; }
+    #section-carousel #towns p {
+      display: inline-block; }
+    #section-carousel #towns ul {
+      list-style-type: none;
+      padding: 0; }
+    #section-carousel #towns a.btn {
+      background-color: #0052aa;
+      box-shadow: none;
+      border: none;
+      color: #fff; }
+      #section-carousel #towns a.btn:hover {
+        background-color: #007bff; }
+
+.cert-example-image img {
+  width: 100%; }
+
+/*# sourceMappingURL=main.css.map */

@@ -85,6 +85,10 @@ body {
 #portfolio {
   margin-top: 50px;
   padding-bottom: 30px; }
+  #portfolio .row {
+    height: 560px; }
+  #portfolio .carousel-item:nth-child(2) {
+    padding-top: 30px; }
   #portfolio .portfolio-card {
     border-width: 1px;
     border-style: solid;
